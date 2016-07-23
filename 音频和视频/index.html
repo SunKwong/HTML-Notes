@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>音频和视频</title>
+</head>
+<body>
+
+	<!-- video -->
+	<video src="###" width="300" height="300"></video>
+	<!-- 显示播放控件 -->
+	<video src="###" controls></video>
+	<!-- 立刻开始播放视频 -->
+	<video src="###" autoplay></video>
+	<!-- 反复播放视频 -->
+	<video src="###" loop></video>
+	<!-- 视频处于静音状态 -->
+	<video src="###" muted></video>
+	<!-- 预先载入视频 -->
+	<!-- 播放器什么都不加载 -->
+	<video src="###" preload="none"></video>
+	<!-- 播放之前只能加载元数据(宽、高、第一帧画面) -->
+	<video src="###" preload="metadata"></video>
+	<!-- 浏览器尽快下载整个视频 -->
+	<video src="###" preload="auto"></video>
+	<!-- 使用预览图 -->
+	<video src="###" poster="img.png"></video>
+
+	<!-- 兼容处理 -->
+	<video width="800" height="600" controls poster="img.png">
+	<source src="test.webm">
+	<source src="test.mp4">
+	<source src="test.ogg">
+	<object>这里引入flash播放器实现IE9以下，但没必要了</object>
+</video>
+
+	<!-- audio -->
+	<!-- 立刻开始播放音频 -->
+	<audio src="###" autoplay></audio>
+	<!-- 显示播放控件 -->
+	<audio src="###" controls></audio>
+	<!-- 预先载入音频 -->
+	<audio src="###" preload></audio>
+	<!-- 兼容处理 -->
+	<audio controls>
+		<source src="test.mp3">
+		<source src="test.m4a">
+		<source src="test.wav">
+	</audio>
+
+
+</body>
+</html>
